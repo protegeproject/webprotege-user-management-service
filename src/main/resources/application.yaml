@@ -1,0 +1,28 @@
+server:
+  port: 7761
+
+logging.level.root: DEBUG
+
+spring:
+  application:
+    name: UserManagement
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+
+webprotege:
+  rabbitmq:
+    requestqueue: webprotege-user-management-queue
+    responsequeue: webprotege-user-management-queue-response
+    timeout: 60000
+  keycloak:
+    serverUrl: http://webprotege-local.edu/auth
+    realmName: webprotege
+    clientId: admin-cli
+    clientSecret: C1MYgWgr9qpLsnNnPS3nbFNf5nGDe5H7
+    username: admin
+    password: password
+
