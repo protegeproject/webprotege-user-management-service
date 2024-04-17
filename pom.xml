@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.stanford.protege</groupId>
-	<artifactId>webprotege-user-management</artifactId>
+	<artifactId>webprotege-user-management-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>webprotege-user-management</name>
+	<name>webprotege-user-management-service</name>
 	<description>Microservice responsible for user management, integration with external systems that handle user management</description>
 	<properties>
 		<java.version>17</java.version>
@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>edu.stanford.protege</groupId>
 			<artifactId>webprotege-ipc</artifactId>
-			<version>0.10.3-SNAPSHOT</version>
+			<version>1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.keycloak</groupId>
