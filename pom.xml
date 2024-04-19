@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>edu.stanford.protege</groupId>
-	<artifactId>webprotege-user-management</artifactId>
+	<artifactId>webprotege-user-management-service</artifactId>
 	<version>1.0.0</version>
 	<name>webprotege-user-management</name>
 	<description>Microservice responsible for user management, integration with external systems that handle user management</description>
