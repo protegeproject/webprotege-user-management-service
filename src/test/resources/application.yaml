@@ -12,6 +12,7 @@ webprotege:
   rabbitmq:
     requestqueue: webprotege-user-management-queue
     responsequeue: webprotege-user-management-queue-response
+    commands-subscribe: false
     timeout: 60000
   keycloak:
     serverUrl: http://webprotege-local.edu/auth
