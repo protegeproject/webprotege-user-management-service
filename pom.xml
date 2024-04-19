@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>edu.stanford.protege</groupId>
 	<artifactId>webprotege-user-management</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.0</version>
 	<name>webprotege-user-management</name>
 	<description>Microservice responsible for user management, integration with external systems that handle user management</description>
 	<properties>
