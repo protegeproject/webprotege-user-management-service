@@ -26,4 +26,4 @@ jobs:
         run: mvn --batch-mode -Prelease package dockerfile:push
 env:
   DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
-  DOCKER_TOKEN: ${{secrets.DOCKER_PASSWORD}}
+  DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
