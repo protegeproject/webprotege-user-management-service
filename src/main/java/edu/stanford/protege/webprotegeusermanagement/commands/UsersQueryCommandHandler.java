@@ -38,7 +38,7 @@ public class UsersQueryCommandHandler implements CommandHandler<UsersQueryReques
     @Override
     public Mono<UsersQueryResponse> handleRequest(UsersQueryRequest request, ExecutionContext executionContext) {
         LOGGER.info("Handle request");
-        List<UserId> users = userRepository.findUserIdsFromName(request.userName());
+        List<UserId> users = userRepository.findUserIdsFromName(request.userName(), request.exactMatch());
         return Mono.just(new UsersQueryResponse(users));
     }
 }
