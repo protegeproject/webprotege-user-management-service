@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface UserRepository {
 
-    public List<UserId> findUserIdsFromName(String name);
+    List<UserId> findUserIdsFromName(String name, boolean exactMatch);
 }
