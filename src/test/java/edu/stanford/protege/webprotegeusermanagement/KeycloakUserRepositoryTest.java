@@ -51,7 +51,7 @@ public class KeycloakUserRepositoryTest {
         user.setUsername("johndoe");
         when(userResource.search(eq("john"), eq(false))).thenReturn(Arrays.asList(user));
 
-        List<UserId> response = repository.findUserIdsFromName("john");
+        List<UserId> response = repository.findUserIdsFromName("john", false);
 
         assertNotNull(response);
         assertEquals(1, response.size());
@@ -62,7 +62,7 @@ public class KeycloakUserRepositoryTest {
     public void GIVEN_missingUser_WHEN_queryForUsers_THEN_responseIsEmpty(){
         when(userResource.search(eq("alice"), eq(false))).thenReturn(new ArrayList<>());
 
-        List<UserId> response = repository.findUserIdsFromName("alice");
+        List<UserId> response = repository.findUserIdsFromName("alice", false);
 
         assertNotNull(response);
         assertEquals(0, response.size());
@@ -72,7 +72,7 @@ public class KeycloakUserRepositoryTest {
     public void GIVEN_exception_WHEN_fetchForUsers_THEN_responseIsEmpty(){
         when(userResource.search(eq("bob"), eq(false))).thenThrow(new RuntimeException());
 
-        List<UserId> response = repository.findUserIdsFromName("bob");
+        List<UserId> response = repository.findUserIdsFromName("bob", false);
 
         assertNotNull(response);
         assertEquals(0, response.size());

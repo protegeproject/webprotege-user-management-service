@@ -28,10 +28,10 @@ public class KeycloakUserRepository implements UserRepository {
 
 
     @Override
-    public List<UserId> findUserIdsFromName(String name) {
+    public List<UserId> findUserIdsFromName(String name, boolean exact) {
         try {
             return keycloak.realm(realmName)
-                    .users().search(name, false).stream()
+                    .users().search(name, exact).stream()
                     .map(userRepresentation -> new UserId(userRepresentation.getUsername()))
                     .collect(Collectors.toList());
         }catch (Exception e) {
