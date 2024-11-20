@@ -17,7 +17,7 @@ webprotege:
   keycloak:
     serverUrl: http://webprotege-local.edu/auth
     realmName: webprotege
-    clientId: machine-client
-    clientSecret: MAtkcTm35UXv9ohvtFEKzTP1Hf1tBtTw
+    clientId: user-management
+    clientSecret: 448ae58e-a9f0-4fab-92fe-650bfd5f9e57
     username: admin
     password: password

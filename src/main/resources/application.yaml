@@ -1,7 +1,9 @@
 server:
   port: 7761
 
-logging.level.root: DEBUG
+logging:
+  level:
+    root: DEBUG
 
 spring:
   application:
@@ -22,7 +24,7 @@ webprotege:
     serverUrl: http://webprotege-local.edu/auth
     realmName: webprotege
     clientId: user-management
-    clientSecret: d4c1e0f1-599f-411c-bc1b-0fafb05424ac
+    clientSecret: 448ae58e-a9f0-4fab-92fe-650bfd5f9e57
     username: admin
     password: password
 
