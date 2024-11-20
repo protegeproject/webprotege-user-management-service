@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>edu.stanford.protege</groupId>
 	<artifactId>webprotege-user-management-service</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<name>webprotege-user-management</name>
 	<description>Microservice responsible for user management, integration with external systems that handle user management</description>
 	<properties>
@@ -55,7 +55,7 @@
 		<dependency>
 			<groupId>edu.stanford.protege</groupId>
 			<artifactId>webprotege-ipc</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.keycloak</groupId>
