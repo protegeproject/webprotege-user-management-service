@@ -85,7 +85,7 @@ jobs:
         id: release-outputs
         run: |
           echo "version=${{ steps.bump.outputs.new_base_version }}" >> $GITHUB_OUTPUT
-          echo "service=webprotege-authorization-service" >> $GITHUB_OUTPUT
+          echo "service=webprotege-user-management-service" >> $GITHUB_OUTPUT
 
   notify-bump:
     needs: build
